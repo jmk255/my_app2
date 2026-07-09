@@ -1,0 +1,13 @@
+div#box{
+  margin:20px auto;
+  padding:20px;
+  width:300px;
+  border: 1px solid gray; 
+  box-shadow:5px 5px 5px #aaa;
+}
+
+h1{font-size:15pt;}
+div.control{margin-bottom:1em;}
+input{padding:0.3em;}
+select{padding:0.3em; margin-bottom:1em;}
+hr{margin:2em 0;}
