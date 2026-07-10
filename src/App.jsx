@@ -12,6 +12,8 @@ function App() {
         <Link to="/login">로그인</Link>{" | "}
         <Link to="/product">상품페이지</Link>{" | "}
         <Link to="/counter">렌더링</Link>{" | "}
+        <Link to="/counter2">렌더링2</Link>{" | "}
+        <Link to="/counter3">useEffect훅</Link>{" | "}
       </nav>
       <main>
         <Outlet />
