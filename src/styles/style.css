@@ -57,9 +57,5 @@ button:hover {
   margin-left: 10px;
 }
 
-.Clock{
-  text-align: center;
-  width:200px;
-  border:1px solid gray;
-  margin:20px auto;
-}
+div.box { display: inline-block; margin: 10px; padding: 10px; border: 1px solid gray; }
+button { display: block; padding: 0.2em 2em; margin: 0.5em; }

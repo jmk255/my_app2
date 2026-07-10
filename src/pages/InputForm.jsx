@@ -1,10 +1,6 @@
-import { useState } from "react"
+import useForm from "../hooks/useForm"
 
 function InputForm() {
-  // const [name, setName] = useState("");
-  // const [age, setAge] = useState(NaN); //NaN의 타입은 Number
-  // const [gender, setGender] = useState("");
-  // const [subjectId, setSubjectId] = useState(0);
   const initValue = {
     name : "",
     age: NaN,
@@ -12,12 +8,8 @@ function InputForm() {
     subjectId: 0,
     enabled: false
   }
-  // 하나의 상태 변수에 여러 데이터를 담기 위해 객체로 변경
-  const [student, setStudent] = useState(initValue)
-  //student객체의 속성값을 그대로 복제(...student)(이벤트 타겟의 name값에 해당하는 프로퍼티만 변경)
-  const handler = (e) => e.target.type === "checkbox" ? 
-    setStudent({...student, [e.target.name]: e.target.checked}) : 
-    setStudent({...student, [e.target.name]: e.target.value})
+  // useForm컴포넌트로 현재 상태값과 변경 함수를 전달
+  const [student, handler] = useForm(initValue)
 
   return (
     <div id="box">

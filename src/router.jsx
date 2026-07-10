@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router";
 import App from "./App";
 import InputForm from "./pages/InputForm";
 import LoginForm from "./pages/LoginForm";
+import Product from "./pages/Product";
+import CounterDemo from "./pages/CounterDemo";
 
 //브라우저 라우터를 생성
 //배열 안에 모든 페이지(URL)를 등록
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path:"login",
         element: <LoginForm />
+      },
+      {
+        path:"product",
+        element: <Product />
+      },
+      {
+        path:"counter",
+        element: <CounterDemo />
       },
     ]
   }

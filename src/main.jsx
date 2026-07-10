@@ -5,9 +5,7 @@ import { RouterProvider } from 'react-router'
 //라우터 객체를 가져옵니다
 import router from './router'
 
+//RouterProvider에 router객체를 전달
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/*RouterProvider에 router객체를 전달 */}
-    <RouterProvider router={router} />
-  </StrictMode>,
+  <RouterProvider router={router} />
 )
