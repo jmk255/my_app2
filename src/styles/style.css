@@ -11,3 +11,55 @@ div.control{margin-bottom:1em;}
 input{padding:0.3em;}
 select{padding:0.3em; margin-bottom:1em;}
 hr{margin:2em 0;}
+
+#container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.control {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.Clock{
+  text-align: center;
+  width:200px;
+  border:1px solid gray;
+  margin:20px auto;
+}
