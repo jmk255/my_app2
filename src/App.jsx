@@ -16,6 +16,8 @@ function App() {
         <Link to="/counter3">useEffect훅</Link>{" | "}
         <Link to="/clock">시계</Link>{" | "}
         <Link to="/callback">useCallback훅</Link>{" | "}
+        <Link to="/style">스타일 컴포넌트</Link>{" | "}
+        <Link to="/ref">useRef훅</Link>{" | "}
         <Link to="/example">연습문제</Link>{" | "}
       </nav>
       <main>

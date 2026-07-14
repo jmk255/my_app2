@@ -13,7 +13,7 @@ function GroupComponent(){
     setCountA(countA => countA + 1)
   }, [setCountA])
   
-  //렌더링 될때마다 함수가 다시 생성되지 않는다
+  //렌더링 될때마다 함수가 다시 생성되지 않는다`
   const increaseB = useCallback(() => {
     setCountB(countB => countB + 1)
   }, [setCountB])

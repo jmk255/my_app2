@@ -10,6 +10,8 @@ import Counter from "./pages/Counter";
 import ExampleForm from "./pages/ExampleForm";
 import Clock from "./pages/Clock";
 import UseCallbackEx from "./pages/UseCallbackEx";
+import StyledEx from "./pages/StyledEx";
+import RefEx from "./pages/RefEx";
 
 //브라우저 라우터를 생성
 //배열 안에 모든 페이지(URL)를 등록
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
       {
         path:"callback",
         element: <UseCallbackEx />
+      },
+      {
+        path:"style",
+        element: <StyledEx />
+      },
+      {
+        path:"ref",
+        element: <RefEx />
       },
     ]
   }
