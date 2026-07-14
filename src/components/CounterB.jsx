@@ -1,16 +1,16 @@
-import { useState } from "react"
+import { memo } from "react"
 
-function CounterB() {
+function CounterB({value, increase}) {
   console.log("CounterB 호출됨")
-  const [value, setValue] = useState(0);
+
   return (
     <div className="box">
       <h1>Counter B</h1>
-      <button onClick={() => setValue(value+1)}>
+      <button onClick={increase}>
         {value}
       </button>
     </div>
   )
 }
 
-export default CounterB
+export default memo(CounterB)

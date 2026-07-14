@@ -1,16 +1,18 @@
-import { useState } from "react"
+import { memo } from "react"
 
-function CounterA() {
+//value = 부모로 부터 전달 받은 숫자
+//increase = 부모로 부터 전달 받은 상태변경함수
+function CounterA({value, increase}) {
   console.log("CounterA 호출됨")
-  const [value, setValue] = useState(0);
+
   return (
     <div className="box">
       <h1>Counter A</h1>
-      <button onClick={() => setValue(value+1)}>
+      <button onClick={increase}>
         {value}
       </button>
     </div>
   )
 }
-
-export default CounterA
+//불필요한 렌더링을 막아주는 리액트 기능(memo)
+export default memo(CounterA)
