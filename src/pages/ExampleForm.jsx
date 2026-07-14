@@ -2,6 +2,7 @@ import { Timer, Lifecycle, TimerWithCleanup, SyncedInputs } from "../components/
 function ExampleForm() {
   return (
     <>
+      <Timer />
       <Lifecycle />
       <TimerWithCleanup />
       <SyncedInputs />
