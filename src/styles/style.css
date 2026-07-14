@@ -64,3 +64,7 @@ button { display: block; padding: 0.2em 2em; margin: 0.5em; }
   font-size:15pt; margin-right:20px;
 }
 .counter div{margin:20px;}
+
+.Clock { text-align: center; width: 200px; border: 1px solid gray; margin: 20px auto; }
+.Clock h1 { margin: 10px; }
+.Clock p { font-size: 16pt; }
