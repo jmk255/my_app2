@@ -7,6 +7,7 @@ import Product from "./pages/Product";
 import CounterDemo from "./pages/CounterDemo";
 import CounterDemo2 from "./pages/CounterDemo2";
 import Counter from "./pages/Counter";
+import ExampleForm from "./pages/ExampleForm";
 
 //브라우저 라우터를 생성
 //배열 안에 모든 페이지(URL)를 등록
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <InputForm />
+      },
+      {
+        path:"example",
+        element: <ExampleForm />
       },
       {
         path:"login",

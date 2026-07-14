@@ -14,6 +14,7 @@ function App() {
         <Link to="/counter">렌더링</Link>{" | "}
         <Link to="/counter2">렌더링2</Link>{" | "}
         <Link to="/counter3">useEffect훅</Link>{" | "}
+        <Link to="/example">연습문제</Link>{" | "}
       </nav>
       <main>
         <Outlet />
